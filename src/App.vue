@@ -1,16 +1,15 @@
 <template>
   <main>
     <px-header></px-header>
-    <px-assets-table></px-assets-table>
+    <router-view class="container flex p-6" />
   </main>
 </template>
 
 <script>
 import PxHeader from "@/components/PxHeader";
-import PxAssetsTable from "@/components/PxAssetsTable";
 export default {
   name: "App",
-  components: { PxHeader, PxAssetsTable }
+  components: { PxHeader }
 };
 </script>
 
